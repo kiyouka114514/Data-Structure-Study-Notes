@@ -20,6 +20,7 @@
 3 7 6
 7 4 1
 3 4 10
+边权和为36
 ```
 
 ```cpp
@@ -84,7 +85,8 @@ void Kruskal(){
             sum += e[i].w;
             cnt++;
             //可选
-            cout << e[i].u << " " << e[i].v << " " << e[i].w << endl;
+            // cout << "新增连接" << endl;
+            // cout << e[i].u << " " << e[i].v << " " << e[i].w << endl;
         }
         if(cnt==n-1)    // 最多n-1条边
             break;
